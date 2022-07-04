@@ -1,0 +1,46 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #ededed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands {
+    font-size: 60px;
+    color: gray;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 42px;
+    background: linear-gradient(225px, #d5d5d5, #fefefe);
+    box-shadow: 
+    -5px 5px 10px #c0c0c0,
+    5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.box:hover{
+    background: #e3e3e3;
+}
+
+.box:active{
+    transition: 1s;
+    box-shadow: 
+    inset -5px 5px 10px #c0c0c0,
+    inset 5px -5px 10px #ffffff;
+}
+
